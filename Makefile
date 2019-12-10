@@ -9,7 +9,8 @@ info:
 
 .PHONY: build
 build:
-	@$(GO_BIN) build -o $(PROGRAM) $(GO_FLG) $(OBJS)
+	@$(GO_BIN) build -o $(PROGRAM) $(GO_FLG) $(OBJS) ${ARGS}
+	@echo "exit... $?"
 
 .PHONY: clean
 clean:
